@@ -99,8 +99,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="489.34483"
-     inkscape:cy="423.83517"
+     inkscape:cx="509.34483"
+     inkscape:cy="360.97803"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -181,7 +181,9 @@
          sodipodi:role="line"
          x="63.97744"
          y="476.56042"
-         id="tspan4142">X509v3 Subject Alternative Name: .... <tspan
+         id="tspan4142"><tspan
+   style="font-weight:bold"
+   id="tspan11546">X509v3 Subject Alternative Name:</tspan> .... <tspan
    style="font-weight:bold"
    id="tspan4164">DNS:*.google.ca</tspan> .....</tspan></text>
     <rect

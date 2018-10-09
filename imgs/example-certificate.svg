@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 1052.3622 744.09448"
+   id="svg10895"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="example-certificate.svg">
+  <defs
+     id="defs10897" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="476.7046"
+     inkscape:cy="48.454882"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="847"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata10900">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.26772)">
+    <rect
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffa200;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.07981324;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="rect4178"
+       width="920.57666"
+       height="581.14282"
+       x="67.711693"
+       y="389.21936" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.11675453px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="93.934937"
+       y="429.65106"
+       id="text4136"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="429.65106"
+         id="tspan4140"
+         style="font-weight:bold">X509 Certificate</tspan><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="454.797"
+         id="tspan9523" /><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="479.94296"
+         id="tspan11475"
+         style="font-weight:bold">Validity</tspan><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="505.0889"
+         id="tspan11477">            Not Before: Sep 18 12:34:00 2018 GMT</tspan><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="530.23486"
+         id="tspan11481">            Not After : Dec 11 12:34:00 2018 GMT</tspan><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="555.3808"
+         id="tspan9528"><tspan
+   style="font-weight:bold"
+   id="tspan9530">Subject:</tspan> C=US, ST=California, L=Mountain View, O=Google LLC, <tspan
+   style="font-weight:bold"
+   id="tspan11519">CN=*.google.com</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="580.52673"
+         id="tspan7044"><tspan
+   style="font-weight:bold"
+   id="tspan9110">Issuer:</tspan> C=US, O=Google Trust Services, <tspan
+   style="font-weight:bold"
+   id="tspan11521">CN=Google Internet Authority G3</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="605.67267"
+         id="tspan4142"><tspan
+   style="font-weight:bold"
+   id="tspan11515">X509v3 Subject Alternative Name:</tspan> .... <tspan
+   style="font-weight:bold"
+   id="tspan11548">DNS:*.google.ca</tspan> .....</tspan><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="630.8186"
+         id="tspan11489"
+         style="font-weight:bold">Subject Public Key Info:</tspan><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="655.96454"
+         id="tspan11491">            Public Key Algorithm: id-ecPublicKey</tspan><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="681.11047"
+         id="tspan11493">                Public-Key: (256 bit)</tspan><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="706.25641"
+         id="tspan11495">                pub: </tspan><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="731.4024"
+         id="tspan11497">                    04:22:72:1f:ee:26:39:a4:93:16:2f:81:89:24:00:</tspan><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="756.54834"
+         id="tspan11499">                    ee:25:a8:2f:6b:6b:66:53:41:50:3e:4f:ce:15:97:</tspan><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="781.69427"
+         id="tspan11501">                    d9:c3:83:14:19:6c:a6:d1:9b:b9:5b:ab:47:65:2c:</tspan><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="806.84021"
+         id="tspan11503">                    e1:f8:00:43:cd:5c:20:3d:b0:1e:0c:bc:af:16:cb:</tspan><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="831.98615"
+         id="tspan11505">                    ea:f0:d9:e8:1f</tspan><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="857.13208"
+         id="tspan11507">                ASN1 OID: prime256v1</tspan><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="882.27802"
+         id="tspan11509">                NIST CURVE: P-256</tspan><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="907.42401"
+         id="tspan11542"
+         style="font-weight:bold">....</tspan><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="932.56995"
+         id="tspan11511" /><tspan
+         sodipodi:role="line"
+         x="93.934937"
+         y="957.71588"
+         id="tspan11487" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:49.59875107px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="252.85715"
+       y="1122.3622"
+       id="text11552"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan11554"
+         x="252.85715"
+         y="1122.3622">goo.gl</tspan><tspan
+         sodipodi:role="line"
+         x="252.85715"
+         y="1184.3606"
+         id="tspan11566">g.co</tspan><tspan
+         sodipodi:role="line"
+         x="252.85715"
+         y="1246.359"
+         id="tspan11556">ggpht.cn</tspan><tspan
+         sodipodi:role="line"
+         x="252.85715"
+         y="1308.3575"
+         id="tspan11558">urchin.com</tspan><tspan
+         sodipodi:role="line"
+         x="252.85715"
+         y="1370.356"
+         id="tspan11560">youtubeeducation.com</tspan><tspan
+         sodipodi:role="line"
+         x="252.85715"
+         y="1432.3544"
+         id="tspan11564">android.com</tspan></text>
+  </g>
+</svg>
