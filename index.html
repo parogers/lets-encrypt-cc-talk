@@ -45,6 +45,13 @@
       <h2>What is Let's Encrypt?</h2>
 
       <p>Let's Encrypt is a certificate authority that grants free X.509 certificates via an easy-to-use, automated process.</p>
+
+
+      * Let's encrypt is a certificate authority (CA) that provides an automated process for obtaining, renewing and revoking X509 SSL/TLS certificates (think HTTPS)
+      * Project was started in 2012 by two Mozilla employees, a member of the EFF, and a prof from U of Michigan
+      * Huge success - over 100 million certs issued
+
+      * Goals: easy deployment, automated, free
     </section>
 
     <section class="slide">
@@ -63,12 +70,18 @@
     </section>
 
     <section class="slide">
-      <h2>What is certificate authority?</h2>
+      <h2>What is certificate authority (CA)?</h2>
 
       <ul>
-        <li>Manages digital certificates (called X.509)</li>
-        <li>Provides a sense of trust</li>
+        <li>It's an organization/business that entrusted with the authority to grant digital certificates</li>
+        <li>Certificates are cryptographically signed by a CA</li>
+        <li>That signature implies that the contents of the certificate can be considered trustworthy</li>
       </ul>
+
+      <p>Why use a CA?</p>
+      
+      * A server can issue self-signed certificates. That provides secrecy and integrity, but not authenticity. (they are vouching for themselves)
+
     </section>
 
     <section class="slide">
@@ -76,11 +89,24 @@
 
       <img src="./imgs/chain-of-trust-example.svg"/>
 
-      <p>This is some content</p>
+      <ul>
+        <li>Certbot is the recommended client (there are many others)</li>
+        <li>A server you own (example.com) contacts the let's encrypt CA server</li>
+        <li>LE server issues a challenge (say HTTP challenge)</li>
+        <li>The HTTP challenge asks the client to create a resource on its HTTP server (/.well-known/acme-challenge/<em>token</em>) that contains the client key authorization (made from the challenge token, and account key)</li>
+        <li>The create resource is secret and only the server should know about it (so another host can't just guess the resource path and duplicate the secret)</li>
+      </ul>
     </section>
 
     <section class="slide">
       <h2>Why bother?</h2>
+
+      https://sites.google.com/site/markklein2009/Home
+NSA shenanigans (https://theintercept.com/2018/06/25/att-internet-nsa-spy-hubs/)
+Firesheep (https://en.wikipedia.org/wiki/Firesheep)
+      Router malware (VPNFilter - https://blog.malwarebytes.com/cybercrime/2018/06/vpnfilter-malware-still-making-waves/)
+      https://www.theregister.co.uk/2018/05/23/vpnfilter_malware_menacing_routers_worldwide/
+ISP snooping/tracking (Verizon perma-cookies - https://www.eff.org/deeplinks/2014/11/verizon-x-uidh)
 
       <p>This is some content</p>
     </section>
@@ -88,11 +114,20 @@
     <section class="slide">
       <h2>Some technical details</h2>
 
+      openssl x509 -text -in some-file.crt
+      true | openssl s_client -showcerts -connect google.ca:443 -servername google.ca
+
       <p>This is some content</p>
     </section>
 
     <section class="slide">
       <h1>It's over!</h1>
+
+https://blog.cryptographyengineering.com/2015/08/16/the-network-is-hostile/
+https://www.schneier.com/blog/archives/2015/08/nsas_partnershi.html
+https://en.wikipedia.org/wiki/Room_641A
+https://theintercept.com/2018/06/25/att-internet-nsa-spy-hubs/
+https://ietf-wg-acme.github.io/acme/draft-ietf-acme-acme.html
 
       <p>Thank-you!</p>
     </section>
