@@ -49,7 +49,7 @@
       <ul>
         <li>Digital certificates allow for secure communication with websites (HTTPS)</li>
         <li>A certificate authority (CA) issues, manages, revokes digital certificates</li>
-        <li></li>
+        <li>Very friendly documentation (<em><a href="https://letsencrypt.org/">https://letsencrypt.org/</a></em>)</li>
       </ul>
     </section>
 
@@ -60,7 +60,7 @@
         <li>Where it's different: Let's Encrypt provides a free, easy and automated way of issuing certificates</li>
         <li>Project was started in 2012 by two Mozilla employees, a member of the EFF, and a prof from U of Michigan</li>
         <li>Created in the context of Edward Snowden's revelations</li>
-        <li>Huge success - over 100 million certs issued</li>
+        <li>Huge success: over 100 million certs issued</li>
       </ul>
     </section>
 
@@ -77,9 +77,21 @@
     </section>
 
     <section class="slide">
-       <h2>What do certificates look like?</h2>
+      <h2>What do certificates look like?</h2>
 
       <img src="imgs/example-certificate.svg">
+    </section>
+
+    <section class="slide">
+      <h2>Viewing certs in Firefox</h2>
+
+      <ul>
+        <li>Right-click on a page and click <em>View Page Info</em></li>
+        <li>Click <em>Security</em> then <em>View Certificate</em></li>
+      </ul>
+
+      <img src="imgs/ff-info2.png">
+
     </section>
 
     <section class="slide">
@@ -90,10 +102,18 @@
         <li>Certificates are cryptographically signed by a CA</li>
         <li>That signature implies that the contents of the certificate can be considered trustworthy</li>
       </ul>
+    </section>
+
+    <section class="slide">
+      <h2>What is certificate authority? (cont.)</h2>
 
       <p>Why use a CA?</p>
-      
-      * A server can issue self-signed certificates. That provides secrecy and integrity, but not authenticity. (they are vouching for themselves)
+
+      <ul>
+        <li>A server can issue self-signed certificates, without needing a CA.</li>
+        <li>That provides secrecy and integrity, but not authenticity.</li>
+        <li>Self-signed == server is vouching for itself.</li>
+      </ul>
     </section>
 
     <section class="slide">
@@ -103,20 +123,11 @@
     </section>
 
     <section class="slide">
-      <h2>Some technical details (aka we can totally skip this)</h2>
-
-      openssl x509 -text -in some-file.crt
-      true | openssl s_client -showcerts -connect google.ca:443 -servername google.ca
-
-      <p>This is some content</p>
-    </section>
-
-    <section class="slide">
       <h2>Why bother?</h2>
 
       <img src="imgs/article-vpn-filter.png">
       <p>
-        https://www.theregister.co.uk/2018/05/23/vpnfilter_malware_menacing_routers_worldwide/
+        <em><a href="https://www.theregister.co.uk/2018/05/23/vpnfilter_malware_menacing_routers_worldwide/">https://www.theregister.co.uk/2018/05/23/vpnfilter_malware_menacing_routers_worldwide/</a></em>
       </p>
     </section>
 
@@ -125,7 +136,7 @@
 
       <img src="imgs/article-mark-klein-wired.png">
       <p>
-        https://www.wired.com/2006/05/att-whistle-blowers-evidence/
+        <em><a href="https://www.wired.com/2006/05/att-whistle-blowers-evidence/">https://www.wired.com/2006/05/att-whistle-blowers-evidence/</a></em>
       </p>
     </section>
 
@@ -134,7 +145,17 @@
 
       <img src="imgs/article-verizon-perma-cookies.png">
       <p>
-        https://www.eff.org/deeplinks/2014/11/verizon-x-uidh
+        <em><a href="https://www.eff.org/deeplinks/2014/11/verizon-x-uidh">https://www.eff.org/deeplinks/2014/11/verizon-x-uidh</a></em>
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>The take away?</h2>
+
+      <pre>"The network is hostile"
+--Matthew Green</pre>
+      <p>
+        <em><a href="https://blog.cryptographyengineering.com/2015/08/16/the-network-is-hostile/">https://blog.cryptographyengineering.com/2015/08/16/the-network-is-hostile/</a></em>
       </p>
     </section>
 
@@ -142,11 +163,28 @@
       <h2>How does Let's Encrypt work?</h2>
 
       <ul>
-        <li>Certbot is the recommended client (there are many others)</li>
-        <li>A server you own (example.com) contacts the let's encrypt CA server</li>
-        <li>LE server issues a challenge (say HTTP challenge)</li>
+        <li>Certbot (<em><a href="https://certbot.eff.org/">https://certbot.eff.org/</a></em>) is the recommended client</li>
+        <li>A server you own (example.com) contacts the Let's Encrypt server</li>
+        <li>Server issues a challenge (say HTTP challenge)</li>
         <li>The HTTP challenge asks the client to create a resource on its HTTP server (/.well-known/acme-challenge/<em>token</em>) that contains the client key authorization (made from the challenge token, and account key)</li>
-        <li>The create resource is secret and only the server should know about it (so another host can't just guess the resource path and duplicate the secret)</li>
+        <li>The created resource is secret and only the server should know about it (so another host can't just guess the resource path and duplicate the secret)</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h1>Demo</h1>
+    </section>
+
+    <section class="slide">
+      <h2>Summary</h2>
+
+      <ul>
+        <li>A digital certificate allows for secure communication on the internet</li>
+        <li>X.509 describes the certificate format</li>
+        <li>A certificate authority (CA) issues certificates</li>
+        <li>Security is based on a chain of trust/root trust model</li>
+        <li>Let's Encrypt provides free, easy, automated certificate management</li>
+        <li>Also: Let's Encrypt is super!</li>
       </ul>
     </section>
 
@@ -155,10 +193,11 @@
     </section>
 
     <section class="slide">
-      <h2>Some links</h2>
+      <h2>Links &amp; references</h2>
 
       <ul>
-        <li>https://blog.cryptographyengineering.com/2015/08/16/the-network-is-hostile/</li>
+        <li>https://letsencrypt.org/</li>
+        <li>https://certbot.eff.org/</li>
         <li>https://www.schneier.com/blog/archives/2015/08/nsas_partnershi.html</li>
         <li>https://klen.wikipedia.org/wiki/Room_641A</li>
         <li>https://theintercept.com/2018/06/25/att-internet-nsa-spy-hubs/</li>
