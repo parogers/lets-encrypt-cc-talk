@@ -44,29 +44,42 @@
     <section class="slide">
       <h2>What is Let's Encrypt?</h2>
 
-      <p>Let's Encrypt is a certificate authority that grants free X.509 certificates via an easy-to-use, automated process.</p>
+      <p>Let's Encrypt is a certificate authority that grants free digital certificates via an easy-to-use, automated process.</p>
 
+      <ul>
+        <li>Digital certificates allow for secure communication with websites (HTTPS)</li>
+        <li>A certificate authority (CA) issues, manages, revokes digital certificates</li>
+        <li></li>
+      </ul>
+    </section>
 
-      * Let's encrypt is a certificate authority (CA) that provides an automated process for obtaining, renewing and revoking X509 SSL/TLS certificates (think HTTPS)
-      * Project was started in 2012 by two Mozilla employees, a member of the EFF, and a prof from U of Michigan
-      * Huge success - over 100 million certs issued
+    <section class="slide">
+      <h2>What is Let's Encrypt? (cont.)</h2>
 
-      * Goals: easy deployment, automated, free
+      <ul>
+        <li>Where it's different: Let's Encrypt provides a free, easy and automated way of issuing certificates</li>
+        <li>Project was started in 2012 by two Mozilla employees, a member of the EFF, and a prof from U of Michigan</li>
+        <li>Created in the context of Edward Snowden's revelations</li>
+        <li>Huge success - over 100 million certs issued</li>
+      </ul>
     </section>
 
     <section class="slide">
       <h2>What are digital certificates?</h2>
 
-      <p>They provide:</p>
+      <p>Digital certificates and the certificate authority system underpin the security of the modern internet. They provide:</p>
 
       <ul>
         <li>Secrecy (your communications are private)</li>
         <li>Integrity (your communications can't be tampered with)</li>
         <li>Authenticity (you know who you are communicating with)</li>
       </ul>
+    </section>
 
-      <p>Digital certificates and the certificate authority system underpin the security of the modern internet.</p>
-      
+    <section class="slide">
+       <h2>What do certificates look like?</h2>
+
+      <img src="imgs/example-certificate.svg">
     </section>
 
     <section class="slide">
@@ -81,13 +94,52 @@
       <p>Why use a CA?</p>
       
       * A server can issue self-signed certificates. That provides secrecy and integrity, but not authenticity. (they are vouching for themselves)
-
     </section>
 
     <section class="slide">
-      <h2>How does it work?</h2>
+      <h2>How does it all fit together?</h2>
 
       <img src="./imgs/chain-of-trust-example.svg"/>
+    </section>
+
+    <section class="slide">
+      <h2>Some technical details (aka we can totally skip this)</h2>
+
+      openssl x509 -text -in some-file.crt
+      true | openssl s_client -showcerts -connect google.ca:443 -servername google.ca
+
+      <p>This is some content</p>
+    </section>
+
+    <section class="slide">
+      <h2>Why bother?</h2>
+
+      <img src="imgs/article-vpn-filter.png">
+      <p>
+        https://www.theregister.co.uk/2018/05/23/vpnfilter_malware_menacing_routers_worldwide/
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Why bother? (cont.)</h2>
+
+      <img src="imgs/article-mark-klein-wired.png">
+      <p>
+        https://www.wired.com/2006/05/att-whistle-blowers-evidence/
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Why bother? (cont.)</h2>
+
+      <img src="imgs/article-verizon-perma-cookies.png">
+      <p>
+        https://www.eff.org/deeplinks/2014/11/verizon-x-uidh
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>How does Let's Encrypt work?</h2>
 
       <ul>
         <li>Certbot is the recommended client (there are many others)</li>
@@ -99,37 +151,19 @@
     </section>
 
     <section class="slide">
-      <h2>Why bother?</h2>
-
-      https://sites.google.com/site/markklein2009/Home
-NSA shenanigans (https://theintercept.com/2018/06/25/att-internet-nsa-spy-hubs/)
-Firesheep (https://en.wikipedia.org/wiki/Firesheep)
-      Router malware (VPNFilter - https://blog.malwarebytes.com/cybercrime/2018/06/vpnfilter-malware-still-making-waves/)
-      https://www.theregister.co.uk/2018/05/23/vpnfilter_malware_menacing_routers_worldwide/
-ISP snooping/tracking (Verizon perma-cookies - https://www.eff.org/deeplinks/2014/11/verizon-x-uidh)
-
-      <p>This is some content</p>
-    </section>
-
-    <section class="slide">
-      <h2>Some technical details</h2>
-
-      openssl x509 -text -in some-file.crt
-      true | openssl s_client -showcerts -connect google.ca:443 -servername google.ca
-
-      <p>This is some content</p>
-    </section>
-
-    <section class="slide">
       <h1>It's over!</h1>
+    </section>
 
-https://blog.cryptographyengineering.com/2015/08/16/the-network-is-hostile/
-https://www.schneier.com/blog/archives/2015/08/nsas_partnershi.html
-https://en.wikipedia.org/wiki/Room_641A
-https://theintercept.com/2018/06/25/att-internet-nsa-spy-hubs/
-https://ietf-wg-acme.github.io/acme/draft-ietf-acme-acme.html
+    <section class="slide">
+      <h2>Some links</h2>
 
-      <p>Thank-you!</p>
+      <ul>
+        <li>https://blog.cryptographyengineering.com/2015/08/16/the-network-is-hostile/</li>
+        <li>https://www.schneier.com/blog/archives/2015/08/nsas_partnershi.html</li>
+        <li>https://klen.wikipedia.org/wiki/Room_641A</li>
+        <li>https://theintercept.com/2018/06/25/att-internet-nsa-spy-hubs/</li>
+        <li>https://ietf-wg-acme.github.io/acme/draft-ietf-acme-acme.html</li>
+      </ul>
     </section>
 
     <!-- End slides. -->
