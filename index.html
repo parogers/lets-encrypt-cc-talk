@@ -112,8 +112,9 @@
 
       <ul>
         <li>A server can issue self-signed certificates, without needing a CA.</li>
-        <li>That provides secrecy and integrity, but not authenticity.</li>
         <li>Self-signed == server is vouching for itself.</li>
+        <li>That provides secrecy and integrity, but only to the party controlling the certificate.</li>
+        <li>The authenticity of the certificate (eg is it actually controlled by the site you connected to) cannot be assured.</li>
       </ul>
     </section>
 
